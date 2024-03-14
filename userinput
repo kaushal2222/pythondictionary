@@ -1,0 +1,9 @@
+userinput=input("Enter Username :")
+password=input("Enter User password :")
+
+if (userinput == "admin123") and (password == "kaushal"):
+    print("Userinput and Password is Correct")
+elif(userinput == "") and (password == ""):
+    print("Enter username and Password first")
+else:
+    print("Username or Password is not correct")
