@@ -1,0 +1,59 @@
+bollywood={"ramsetu":2023,"kgf":2020,"rrr":2023,"salar":2022,"gadar":2023}
+bollywoodfromkeys=bollywood.fromkeys(bollywood)
+print(bollywoodfromkeys)
+bollywoodfromkeys=bollywood.fromkeys(bollywood,"southmovie")
+print(bollywoodfromkeys)
+print(bollywood.get("frozen"))
+print(bollywood.get("frozen",2013))
+print(bollywood.keys())
+print(bollywood.values())
+print(bollywood.items())
+bollywood.update({"frozen":2013})
+print(bollywood)
+bollywood.setdefault("charoliya")
+print(bollywood)
+bollywood.setdefault("kaushal",2004)
+print(bollywood)
+bollywood.pop("kgf")
+print(bollywood)
+bollywood.popitem()
+print(bollywood)
+a=list(bollywood.keys())
+print(a)
+b=list(bollywood.values())
+print(b)
+c=list(bollywood.items())
+print(c)
+bollywood.clear()
+print(bollywood)
+
+dynamicaluserinputdics...
+def main():
+    print("method1:building dictionary")
+    builddictionary={}
+    for i in range(0,2):
+        dic_key=input("enter key")
+        dic_val=input("enter value")
+        builddictionary.update({dic_key:dic_val})
+    print(f"dictionary is {builddictionary}")
+
+    print("method2:building dictionary")
+    builddictionary={}
+    for i in range(0,2):
+        dic_key=input("enter key")
+        dic_val=input("enter value")
+        builddictionary.update({dic_key:dic_val})
+    print(f"dictionary is {builddictionary}")
+
+    print("method3:Building dictionary")
+    builddictionary={}
+    i=0
+    while i<2:
+        dic_key=input("enter key")
+        dic_val=input("enter value")
+        builddictionary.update({dic_key:dic_val})
+        i=i+1
+    print(f"dictionary is {builddictionary}")
+
+if __name__ == "__main__":
+    main()
