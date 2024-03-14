@@ -1,0 +1,19 @@
+n=int(input("Enter How many family members are in Your Family:"))
+
+dictionary={}
+for i in range(n):
+    dickey=input("Enter Name")
+    dicval=input("Enter number")
+    dictionary.update({dickey:dicval})
+print(f"Name of family is {dictionary}")
+
+
+n=int(input("Enter How many family members are in Your Family:"))
+
+list=[]
+for i in range(n):
+    listval=input("Enter Name")
+    list.append([listval])
+print(f"Name of family is {list}")
+
+
